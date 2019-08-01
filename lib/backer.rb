@@ -7,8 +7,8 @@ def initialize(name)
   @projects = []
 end
 
-def back_projects
-  @projects
+def back_project
+
 end
 
 def self.all
