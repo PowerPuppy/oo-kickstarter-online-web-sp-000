@@ -4,11 +4,10 @@ attr_accessor :name
 
 def initialize(name)
   @name = name
-  @projects = []
+  @backed_projects = []
 end
 
-def back_projects
-  @projects
+def back_project
 end
 
 def self.all
