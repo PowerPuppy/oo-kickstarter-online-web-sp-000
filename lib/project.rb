@@ -8,11 +8,16 @@ def initalize(title)
   @backers = []
 end
 
+def add_backer(backer)
+  self.backers << backer
+  backer.backed_projects << self  
+end
+
 def self.all
   @@all
 end
 
-def all_backers
+def backers
   @backers
 end
 
