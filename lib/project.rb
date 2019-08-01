@@ -1,9 +1,9 @@
 class Project
-attr_accessor :name
+attr_reader :title
 @@all = []
 
-def initalize(name)
-  @name = name
+def initalize(title)
+  @title = title
   @backers = []
 end
 
