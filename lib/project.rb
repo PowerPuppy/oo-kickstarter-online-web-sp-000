@@ -1,5 +1,6 @@
 class Project
-attr_reader :title, :backers
+attr_accessor :title
+attr_reader :backers
 @@all = []
 
 def initalize(title)
