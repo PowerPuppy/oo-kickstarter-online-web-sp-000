@@ -8,8 +8,9 @@ def initialize(name)
   @backed_projects = []
 end
 
-def back_project(title)
-  self.backed_projects << title.Project
+def back_project(project)
+  self.backed_projects << project
+  project.backer << self
 end
 
 def self.all
